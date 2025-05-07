@@ -50,7 +50,7 @@ SGCV_ALP_KM_Comparison/
 ├── LICENSE                                    # (Optional: MIT / GPL)
 └── README.md                                  # Project description
 
-
+```bash
 ## Installation
 
 Clone the repository and install the dependencies:
