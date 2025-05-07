@@ -25,7 +25,7 @@ SGCV_ALP_KM_Comparison/
 ├── detector_geometry_layered.gdml             # ✔ Layered detector (tracker + ECAL + HCAL)
 ├── requirements.txt                           # Python dependencies
 ├── __init__.py                                # Package initializer
-├── LICENSE                                    # (Optional: MIT / GPL)
+├── LICENSE                                    # (Optional: MIT )
 └── README.md                                  # Project description
 ```
 
