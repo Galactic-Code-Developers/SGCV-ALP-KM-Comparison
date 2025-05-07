@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Schema/gdml.xsd">
+
+  <define>
+    <position name="world_pos" x="0" y="0" z="0"/>
+    <rotation name="identity_rot" x="0" y="0" z="0"/>
+  </define>
+
+  <materials>
+    <material name="Air" state="gas">
+      <D value="0.001225" unit="g/cm3"/>
+      <fraction n="0.7" ref="Nitrogen"/>
+      <fraction n="0.3" ref="Oxygen"/>
+    </material>
+    <element name="Nitrogen" Z="7">
+      <atom value="14.0067"/>
+    </element>
+    <element name="Oxygen" Z="8">
+      <atom value="15.999"/>
+    </element>
+  </materials>
+
+  <solids>
+    <!-- World box -->
+    <box name="world_box" x="5.0" y="5.0" z="5.0" lunit="m"/>
+    <!-- Calorimeter box -->
+    <box name="ecal_box" x="1.0" y="1.0" z="0.5" lunit="m"/>
+  </solids>
+
+  <structure>
+    <!-- World volume -->
+    <volume name="volWorld">
+      <materialref ref="Air"/>
+      <solidref ref="world_box"/>
+    </volume>
+
+    <!-- Calorimeter volume -->
+    <volume name="volEcal">
+      <materialref ref="Air"/>
+      <solidref ref="ecal_box"/>
+    </volume>
+  </structure>
+
+  <setup name="Default" version="1.0">
+    <world ref="volWorld"/>
+  </setup>
+
+</gdml>
