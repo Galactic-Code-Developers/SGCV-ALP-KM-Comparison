@@ -1,4 +1,4 @@
-# SGCV ALP/KM Comparison
+# SGCV/ALP/KM Comparison
 ## Project Codename "Condor"
 
 A unified simulation and analysis framework comparing three dark photon production models:
