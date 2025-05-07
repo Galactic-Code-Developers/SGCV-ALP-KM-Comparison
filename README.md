@@ -7,6 +7,7 @@ A unified simulation and analysis framework comparing three dark photon producti
 - **ALP**: Axion-Like Particle scenario  
 - **KM**: Kaluza–Klein photon excitations  
 ---
+It includes Monte Carlo event generation for Higgs → γγ + γ′ decays, simplified detector geometry (ATLAS/SHiP-like), and visualization tools for analyzing spatial and temporal displacement (Δx vs Δt) distributions.
 
 ## 🚀 Launch on Google Colab
 
