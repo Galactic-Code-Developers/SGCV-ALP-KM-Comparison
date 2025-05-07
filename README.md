@@ -1,5 +1,7 @@
 # SGCV ALP KM Comparison
 
+### Project Codename `Condor'
+
 ## Overview
 
 This repository provides a simulation framework for comparing three dark photon generation models within high-energy physics experiments:
@@ -23,20 +25,7 @@ Each model simulates the rare Higgs decay channel:
 - 🔀 **Integrated execution** in `main_simulation_runner.py`
 - 📓 **Jupyter notebook** version for Colab: `SGCV_ALP_KM_Comparison_v_e31ca7f9.ipynb`
 
-SGCV_ALP_KM_Comparison/
-│
-├── SGCV_ALP_KM_Comparison_v_e31ca7f9.ipynb     # Colab notebook
-├── main_simulation_runner.py                  # Main orchestrator
-├── sgcv_simulation.py                         # SGCV model
-├── alp_simulation.py                          # ALP model
-├── km_simulation.py                           # Kaluza–Klein model
-├── event_generator.py                         # Higgs → γγ + γ′ event generator
-├── plot_utils.py                              # Plotting functions
-├── detector_geometry.gdml                     # Detector geometry file
-├── requirements.txt                           # Python dependencies
-├── __init__.py                                # Package initializer
-├── LICENSE                                    # (Optional: MIT / GPL)
-└── README.md                                  # Project description
+<pre><code>```text SGCV_ALP_KM_Comparison/ │ ├── SGCV_ALP_KM_Comparison_v_e31ca7f9.ipynb # Colab notebook ├── main_simulation_runner.py # Main orchestrator ├── sgcv_simulation.py # SGCV model ├── alp_simulation.py # ALP model ├── km_simulation.py # Kaluza–Klein model ├── event_generator.py # Higgs → γγ + γ′ event generator ├── plot_utils.py # Plotting functions ├── detector_geometry.gdml # Detector geometry file ├── requirements.txt # Python dependencies ├── __init__.py # Package initializer ├── LICENSE # (Optional: MIT / GPL) └── README.md # Project description ``` </code></pre>                          # Project description
 
 
 ## Installation
