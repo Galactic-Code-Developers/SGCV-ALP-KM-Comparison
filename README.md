@@ -14,7 +14,7 @@ A unified simulation and analysis framework comparing three dark photon producti
 ```
 SGCV_ALP_KM_Comparison/
 │
-├── SGCV_ALP_KM_Comparison_v_e31ca7f9.ipynb     # Colab notebook
+├── SGCV_ALP_KM_Comparison_v_e31ca7f9.ipynb    # Colab notebook
 ├── main_simulation_runner.py                  # Main orchestrator
 ├── sgcv_simulation.py                         # SGCV model
 ├── alp_simulation.py                          # ALP model
@@ -22,6 +22,7 @@ SGCV_ALP_KM_Comparison/
 ├── event_generator.py                         # Higgs → γγ + γ′ event generator
 ├── plot_utils.py                              # Plotting functions
 ├── detector_geometry.gdml                     # Detector geometry file
+├── detector_geometry_layered.gdml             # ✔ Layered detector (tracker + ECAL + HCAL)
 ├── requirements.txt                           # Python dependencies
 ├── __init__.py                                # Package initializer
 ├── LICENSE                                    # (Optional: MIT / GPL)
