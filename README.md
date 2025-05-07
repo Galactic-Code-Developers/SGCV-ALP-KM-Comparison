@@ -25,13 +25,6 @@ Each model simulates the rare Higgs decay channel:
 - 🔀 **Integrated execution** in `main_simulation_runner.py`
 - 📓 **Jupyter notebook** version for Colab: `SGCV_ALP_KM_Comparison_v_e31ca7f9.ipynb`
 
-# SGCV_ALP_KM_Comparison
-
-A unified simulation and analysis framework comparing three dark photon production models:
-- **SGCV**: Superluminal Graviton Condensate Vacuum
-- **ALP**: Axion-Like Particle scenario
-- **KM**: Kaluza–Klein photon excitations
-
 ## 📁 Project Structure
 
 ```plaintext
