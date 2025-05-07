@@ -6,6 +6,11 @@ A unified simulation and analysis framework comparing three dark photon producti
 - **SGCV**: Superluminal Graviton Condensate Vacuum  
 - **ALP**: Axion-Like Particle scenario  
 - **KM**: Kaluza–Klein photon excitations  
+---
+
+## 🚀 Launch on Google Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Galactic-Code-Developers/SGCV_ALP_KM_Comparison/blob/main/SGCV_ALP_KM_Comparison_v1.1_post_geom.ipynb)
 
 ---
 
