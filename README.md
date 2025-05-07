@@ -35,7 +35,7 @@ SGCV_ALP_KM_Comparison/
 Clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/yourusername/SGCV_ALP_KM_Comparison.git
+git clone https://github.com/Galactic-Code-Developers/SGCV_ALP_KM_Comparison.git
 cd SGCV_ALP_KM_Comparison
 pip install -r requirements.txt
 ```
