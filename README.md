@@ -1,6 +1,6 @@
 # SGCV ALP KM Comparison
 
-### Project Codename `Condor'
+### Project Codename "Condor"
 
 ## Overview
 
