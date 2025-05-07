@@ -14,19 +14,20 @@ A unified simulation and analysis framework comparing three dark photon producti
 ```
 SGCV_ALP_KM_Comparison/
 │
-├── SGCV_ALP_KM_Comparison_v_e31ca7f9.ipynb    # Colab notebook
-├── main_simulation_runner.py                  # Main orchestrator
-├── sgcv_simulation.py                         # SGCV model
-├── alp_simulation.py                          # ALP model
-├── km_simulation.py                           # Kaluza–Klein model
-├── event_generator.py                         # Higgs → γγ + γ′ event generator
-├── plot_utils.py                              # Plotting functions
-├── detector_geometry.gdml                     # Detector geometry file
-├── detector_geometry_layered.gdml             # ✔ Layered detector (tracker + ECAL + HCAL)
-├── requirements.txt                           # Python dependencies
-├── __init__.py                                # Package initializer
-├── LICENSE                                    # (Optional: MIT )
-└── README.md                                  # Project description
+├── SGCV_ALP_KM_Comparison_v1.1_post_geom.ipynb  # ✔ Updated Colab notebook
+├── SGCV_ALP_KM_Comparison_v_e31ca7f9.ipynb      # Colab notebook
+├── main_simulation_runner.py                    # Main orchestrator
+├── sgcv_simulation.py                           # SGCV model
+├── alp_simulation.py                            # ALP model
+├── km_simulation.py                             # Kaluza–Klein model
+├── event_generator.py                           # Higgs → γγ + γ′ event generator
+├── plot_utils.py                                # Plotting functions
+├── detector_geometry.gdml                       # Detector geometry file
+├── detector_geometry_layered.gdml               # ✔ Layered detector (tracker + ECAL + HCAL)
+├── requirements.txt                             # Python dependencies
+├── __init__.py                                  # Package initializer
+├── LICENSE                                      # (MIT )
+└── README.md                                    # Project description
 ```
 
 ---
