@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <define>
+    <constant name="mm" value="1.0"/>
+    <constant name="cm" value="10.0"/>
+    <constant name="m" value="1000.0"/>
+  </define>
+
+  <materials>
+    <material name="G4_AIR">
+      <D value="0.001225" unit="g/cm3"/>
+      <fraction n="0.78" ref="G4_N"/>
+      <fraction n="0.21" ref="G4_O"/>
+      <fraction n="0.01" ref="G4_Ar"/>
+    </material>
+    <material name="G4_Si"/>
+    <material name="G4_PbWO4"/> <!-- ECAL -->
+    <material name="G4_Fe"/>     <!-- HCAL -->
+  </materials>
+
+  <solids>
+    <box name="world" x="300*cm" y="300*cm" z="300*cm"/>
+    <tube name="tracker" rmin="0" rmax="30*cm" z="100*cm" deltaphi="360*deg"/>
+    <tube name="ecal" rmin="30*cm" rmax="60*cm" z="100*cm" deltaphi="360*deg"/>
+    <tube name="hcal" rmin="60*cm" rmax="120*cm" z="100*cm" deltaphi="360*deg"/>
+  </solids>
+
+  <structure>
+    <volume name="volTracker">
+      <materialref ref="G4_Si"/>
+      <solidref ref="tracker"/>
+    </volume>
+
+    <volume name="volECAL">
+      <materialref ref="G4_PbWO4"/>
+      <solidref ref="ecal"/>
+    </volume>
+
+    <volume name="volHCAL">
+      <materialref ref="G4_Fe"/>
+      <solidref ref="hcal"/>
+    </volume>
+
+    <volume name="volWorld">
+      <materialref ref="G4_AIR"/>
+      <solidref ref="world"/>
+      <physvol>
+        <volumeref ref="volTracker"/>
+      </physvol>
+      <physvol>
+        <volumeref ref="volECAL"/>
+      </physvol>
+      <physvol>
+        <volumeref ref="volHCAL"/>
+      </physvol>
+    </volume>
+  </structure>
+
+  <setup name="Default" version="1.0">
+    <world ref="volWorld"/>
+  </setup>
+</gdml>
