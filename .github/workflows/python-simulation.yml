@@ -1,0 +1,43 @@
+name: SGCV_ALP_KM_Comparison CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run simulation test (SGCV)
+      run: |
+        python -c "from sgcv_simulation import generate_sgcv_events; x, t = generate_sgcv_events(100); print(f'SGCV Δx: {x[:2]}, Δt: {t[:2]}')"
+
+    - name: Run simulation test (ALP)
+      run: |
+        python -c "from alp_simulation import run_alp_simulation; print(run_alp_simulation([(10, 0.5)]))"
+
+    - name: Run simulation test (KM)
+      run: |
+        python -c "from km_simulation import run_km_simulation; print(run_km_simulation([(10, 0.5)]))"
+
+    - name: Verify notebook presence
+      run: test -f SGCV_ALP_KM_Comparison_v_e31ca7f9.ipynb
+
+    - name: Check geometry file
+      run: test -f detector_geometry.gdml
