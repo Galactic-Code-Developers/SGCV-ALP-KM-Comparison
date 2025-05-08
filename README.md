@@ -11,7 +11,7 @@ It includes Monte Carlo event generation for Higgs → γγ + γ′ decays, simp
 
 ## 🚀 Launch on Google Colab
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Galactic-Code-Developers/SGCV_ALP_KM_Comparison/blob/main/SGCV_ALP_KM_Comparison_v1.1_post_geom.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Galactic-Code-Developers/SGCV_ALP_KM_Comparison_v_e31ca7f9.ipynb)
 
 ---
 
